@@ -1,0 +1,91 @@
+# AI Supervisory Review Simulator for Financial Services
+
+Portfolio-grade AI evaluation project for a Central Bank or financial regulator AI Risk Analyst role. The simulator reviews fictional **Emerald Credit Bank** AI systems across model risk, fairness, explainability, hallucination, prompt injection, agentic tool-use, privacy, consumer harm, robustness, and governance maturity.
+
+## Why It Matters
+
+Financial AI supervision needs evidence, not demos. This project connects technical evaluation outputs to supervisory artifacts: metrics, stress tests, test-case failures, tool logs, a risk register, an evidence pack, and a mock supervisory letter.
+
+## Architecture
+
+```mermaid
+flowchart LR
+  A["Synthetic credit data"] --> B["Credit model training"]
+  B --> C["Performance, fairness, calibration, robustness"]
+  D["GenAI test cases"] --> E["Assistant evaluator"]
+  F["Agent-risk cases"] --> G["Tool-use evaluator"]
+  C --> H["Risk register"]
+  E --> H
+  G --> H
+  H --> I["Supervisory evidence pack"]
+  H --> J["React dashboard"]
+```
+
+## Install
+
+```bash
+python3 -m pip install -e .
+```
+
+The basic project requires no paid API keys.
+
+## Run The Pipeline
+
+```bash
+python3 -m src.reporting.generate_report
+```
+
+This generates:
+
+- `data/raw/emerald_credit_synthetic.csv`
+- `data/test_cases/genai_finance_assistant_cases.json`
+- `data/test_cases/agentic_loan_assistant_cases.json`
+- `outputs/metrics/*.csv` and `*.json`
+- `outputs/charts/*.png`
+- `outputs/reports/supervisory_evidence_pack.md`
+- `outputs/reports/mock_supervisory_letter.md`
+- `web/public/dashboard_data.json` for the React dashboard
+
+## Run Tests
+
+```bash
+pytest
+```
+
+## Launch React Dashboard
+
+```bash
+python3 -m src.reporting.generate_report
+cd web
+npm install
+npm run dev
+```
+
+## Key Findings
+
+The generated evidence pack summarizes the current run. Typical findings include measurable fairness gaps from proxy attributes, robustness sensitivity under stress, the need for continuous GenAI adversarial tests, and the importance of authorization controls for agentic tools.
+
+## Evaluation Scope
+
+- Credit Risk Model: Logistic Regression and Random Forest with AUC, precision, recall, F1, confusion matrix, Brier score, calibration, fairness, robustness, and feature-importance evidence.
+- GenAI Consumer Finance Assistant: 120 structured test cases covering hallucination, harmful advice, misleading certainty, vulnerable consumers, uncertainty, refusal behavior, fairness consistency, and prompt injection.
+- Agentic Loan Assistant: 50 structured cases covering unauthorized tool use, privacy leakage, prompt injection, policy bypass, escalation failure, and over-automation.
+
+## Risk Scoring
+
+The scoring framework uses severity from 0 to 3, likelihood from 1 to 5, detectability from 1 to 5, evidence strength of low, medium, or high, and maps residual scores to low, medium, high, or critical.
+
+## Role Relevance
+
+This project demonstrates AI evaluation science, model risk management, supervisory evidence design, responsible AI controls, GenAI red-team thinking, and communication of technical findings to policy and governance audiences.
+
+## Limitations
+
+The bank, data, and systems are fictional. Automated scoring is useful for repeatable triage, but it does not replace independent validation, legal review, conduct-risk review, or real customer monitoring.
+
+## Future Work
+
+- Add optional SHAP when installed.
+- Add real LLM judge integration behind a mock fallback.
+- Add drift-monitoring simulation over multiple reporting periods.
+- Add richer counterfactual fairness pair analysis.

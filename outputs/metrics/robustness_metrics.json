@@ -1,0 +1,7 @@
+{
+  "baseline_auc": 0.7382656,
+  "macroeconomic_stress_auc": 0.7287296000000001,
+  "missing_value_auc": 0.7080192000000001,
+  "stress_auc_delta": -0.009535999999999878,
+  "missing_auc_delta": -0.030246399999999896
+}

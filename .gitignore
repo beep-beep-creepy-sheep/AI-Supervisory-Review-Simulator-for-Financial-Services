@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+*.pkl
+.DS_Store
+web/node_modules/
+web/dist/

@@ -1,0 +1,16 @@
+feature,importance
+num__debt_to_income,0.28236505715271304
+num__existing_debt,0.13157368441974213
+num__credit_history_length,0.12305404745249465
+num__income,0.10775880495690092
+num__digital_access_score,0.0880102157277221
+num__missed_payments_12m,0.055814456958139406
+cat__employment_status_unemployed,0.04480228432236945
+cat__age_band_35-49,0.013152688241575916
+cat__housing_status_mortgage,0.012442766925350126
+cat__housing_status_private_rent,0.012371075818772675
+cat__employment_status_employed,0.012132400851003543
+cat__region_Dublin,0.011297353560807473
+cat__employment_status_part_time,0.010633719294825324
+cat__age_band_25-34,0.010278564089654512
+cat__housing_status_owner,0.008674645886458988

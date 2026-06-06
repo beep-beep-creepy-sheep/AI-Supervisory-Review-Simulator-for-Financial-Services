@@ -1,0 +1,265 @@
+{
+  "project": {
+    "title": "AI Supervisory Review Simulator for Financial Services",
+    "bank": "Emerald Credit Bank",
+    "summary": "Regulator-style AI risk assessment across credit ML, GenAI assistant, agentic loan workflows, and governance controls."
+  },
+  "inventory": [
+    {
+      "system": "Credit Risk Model",
+      "purpose": "Loan pre-screening",
+      "evidence": "AUC, calibration, fairness, robustness, explainability"
+    },
+    {
+      "system": "GenAI Consumer Finance Assistant",
+      "purpose": "General customer support",
+      "evidence": "120 structured safety and behavior cases"
+    },
+    {
+      "system": "Agentic Loan Assistant",
+      "purpose": "Simulated loan workflow with tools",
+      "evidence": "50 tool-use risk cases and full tool logs"
+    }
+  ],
+  "creditMetrics": {
+    "logistic_regression": {
+      "auc": 0.738688,
+      "roc_auc_integral": 0.738688,
+      "precision": 0.3007518796992481,
+      "recall": 0.64,
+      "f1": 0.4092071611253197,
+      "brier_score": 0.20198969324917598,
+      "confusion_matrix": [
+        [
+          439,
+          186
+        ],
+        [
+          45,
+          80
+        ]
+      ]
+    },
+    "random_forest": {
+      "auc": 0.7382656,
+      "roc_auc_integral": 0.7382656,
+      "precision": 0.3592814371257485,
+      "recall": 0.48,
+      "f1": 0.410958904109589,
+      "brier_score": 0.1644077072402183,
+      "confusion_matrix": [
+        [
+          518,
+          107
+        ],
+        [
+          65,
+          60
+        ]
+      ]
+    }
+  },
+  "fairness": [
+    {
+      "group": "A",
+      "n": 552,
+      "approval_rate": 0.8134057971014492,
+      "default_capture_rate": 0.42168674698795183,
+      "false_positive_rate": 0.14498933901918976,
+      "approval_rate_gap_to_best": 0.13663812033377243,
+      "default_capture_rate_gap_to_best": 0.1735513482501434,
+      "false_positive_rate_gap_to_best": 0.10501066098081024
+    },
+    {
+      "group": "B",
+      "n": 198,
+      "approval_rate": 0.6767676767676768,
+      "default_capture_rate": 0.5952380952380952,
+      "false_positive_rate": 0.25,
+      "approval_rate_gap_to_best": 0.13663812033377243,
+      "default_capture_rate_gap_to_best": 0.1735513482501434,
+      "false_positive_rate_gap_to_best": 0.10501066098081024
+    }
+  ],
+  "robustness": {
+    "baseline_auc": 0.7382656,
+    "macroeconomic_stress_auc": 0.7287296000000001,
+    "missing_value_auc": 0.7080192000000001,
+    "stress_auc_delta": -0.009535999999999878,
+    "missing_auc_delta": -0.030246399999999896
+  },
+  "genaiSummary": {
+    "cases": 120,
+    "passRate": 0.875,
+    "failedCases": 15,
+    "highestSeverity": 2
+  },
+  "agenticSummary": {
+    "cases": 50,
+    "passRate": 0.82,
+    "failedCases": 9,
+    "highestSeverity": 2
+  },
+  "riskRegister": [
+    {
+      "system": "Credit Risk Model",
+      "category": "Fairness and discrimination risk",
+      "finding": "Protected proxy group metrics show measurable outcome gaps.",
+      "evidence": "Maximum fairness gap 0.174",
+      "severity": 2,
+      "likelihood": 3,
+      "detectability": 4,
+      "evidence_strength": "high",
+      "owner": "Fair Lending",
+      "mitigation": "Set group monitoring triggers and remediation workflow.",
+      "residual_score": 28,
+      "rating": "high"
+    },
+    {
+      "system": "Agentic Loan Assistant",
+      "category": "Agentic tool-use risk",
+      "finding": "Tool authorization and escalation behavior need supervisory evidence.",
+      "evidence": "9 failed cases from 50",
+      "severity": 3,
+      "likelihood": 3,
+      "detectability": 4,
+      "evidence_strength": "high",
+      "owner": "Operations",
+      "mitigation": "Restrict tools by purpose and test escalation gates.",
+      "residual_score": 41,
+      "rating": "high"
+    },
+    {
+      "system": "Credit Risk Model",
+      "category": "Model performance risk",
+      "finding": "Model discrimination is adequate but requires threshold governance.",
+      "evidence": "Best AUC 0.739",
+      "severity": 1,
+      "likelihood": 3,
+      "detectability": 3,
+      "evidence_strength": "high",
+      "owner": "Model Risk",
+      "mitigation": "Document champion model threshold and validation cadence.",
+      "residual_score": 10,
+      "rating": "medium"
+    },
+    {
+      "system": "Credit Risk Model",
+      "category": "Robustness and drift risk",
+      "finding": "Performance shifts under macroeconomic and missing-data stress.",
+      "evidence": "Stress AUC delta -0.010",
+      "severity": 2,
+      "likelihood": 3,
+      "detectability": 3,
+      "evidence_strength": "medium",
+      "owner": "Model Risk",
+      "mitigation": "Add stress tests to periodic monitoring.",
+      "residual_score": 18,
+      "rating": "medium"
+    },
+    {
+      "system": "GenAI Assistant",
+      "category": "Consumer harm risk",
+      "finding": "Automated test suite found residual unsafe-response risk.",
+      "evidence": "15 failed cases from 120",
+      "severity": 3,
+      "likelihood": 2,
+      "detectability": 3,
+      "evidence_strength": "medium",
+      "owner": "Digital Banking",
+      "mitigation": "Expand refusal and vulnerability handling tests.",
+      "residual_score": 18,
+      "rating": "medium"
+    },
+    {
+      "system": "GenAI Assistant",
+      "category": "Prompt injection and adversarial misuse risk",
+      "finding": "Prompt injection controls require continuous regression testing.",
+      "evidence": "Dedicated injection cases included in harness.",
+      "severity": 2,
+      "likelihood": 3,
+      "detectability": 4,
+      "evidence_strength": "medium",
+      "owner": "AI Governance",
+      "mitigation": "Maintain attack library and release gates.",
+      "residual_score": 24,
+      "rating": "medium"
+    },
+    {
+      "system": "All Systems",
+      "category": "Governance and accountability risk",
+      "finding": "Evidence pack should be linked to accountable owners and MI.",
+      "evidence": "Cross-system register generated.",
+      "severity": 2,
+      "likelihood": 3,
+      "detectability": 3,
+      "evidence_strength": "medium",
+      "owner": "Board Risk",
+      "mitigation": "Add owner attestations and monitoring pack.",
+      "residual_score": 18,
+      "rating": "medium"
+    }
+  ],
+  "explainability": [
+    {
+      "feature": "num__debt_to_income",
+      "importance": 0.282365057152713
+    },
+    {
+      "feature": "num__existing_debt",
+      "importance": 0.1315736844197421
+    },
+    {
+      "feature": "num__credit_history_length",
+      "importance": 0.1230540474524946
+    },
+    {
+      "feature": "num__income",
+      "importance": 0.1077588049569009
+    },
+    {
+      "feature": "num__digital_access_score",
+      "importance": 0.0880102157277221
+    },
+    {
+      "feature": "num__missed_payments_12m",
+      "importance": 0.0558144569581394
+    },
+    {
+      "feature": "cat__employment_status_unemployed",
+      "importance": 0.0448022843223694
+    },
+    {
+      "feature": "cat__age_band_35-49",
+      "importance": 0.0131526882415759
+    },
+    {
+      "feature": "cat__housing_status_mortgage",
+      "importance": 0.0124427669253501
+    },
+    {
+      "feature": "cat__housing_status_private_rent",
+      "importance": 0.0123710758187726
+    },
+    {
+      "feature": "cat__employment_status_employed",
+      "importance": 0.0121324008510035
+    },
+    {
+      "feature": "cat__region_Dublin",
+      "importance": 0.0112973535608074
+    },
+    {
+      "feature": "cat__employment_status_part_time",
+      "importance": 0.0106337192948253
+    },
+    {
+      "feature": "cat__age_band_25-34",
+      "importance": 0.0102785640896545
+    },
+    {
+      "feature": "cat__housing_status_owner",
+      "importance": 0.0086746458864589
+    }
+  ]
+}

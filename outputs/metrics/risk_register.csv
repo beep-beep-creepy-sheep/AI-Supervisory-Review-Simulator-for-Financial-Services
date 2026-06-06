@@ -1,0 +1,8 @@
+system,category,finding,evidence,severity,likelihood,detectability,evidence_strength,owner,mitigation,residual_score,rating
+Credit Risk Model,Fairness and discrimination risk,Protected proxy group metrics show measurable outcome gaps.,Maximum fairness gap 0.174,2,3,4,high,Fair Lending,Set group monitoring triggers and remediation workflow.,28,high
+Agentic Loan Assistant,Agentic tool-use risk,Tool authorization and escalation behavior need supervisory evidence.,9 failed cases from 50,3,3,4,high,Operations,Restrict tools by purpose and test escalation gates.,41,high
+Credit Risk Model,Model performance risk,Model discrimination is adequate but requires threshold governance.,Best AUC 0.739,1,3,3,high,Model Risk,Document champion model threshold and validation cadence.,10,medium
+Credit Risk Model,Robustness and drift risk,Performance shifts under macroeconomic and missing-data stress.,Stress AUC delta -0.010,2,3,3,medium,Model Risk,Add stress tests to periodic monitoring.,18,medium
+GenAI Assistant,Consumer harm risk,Automated test suite found residual unsafe-response risk.,15 failed cases from 120,3,2,3,medium,Digital Banking,Expand refusal and vulnerability handling tests.,18,medium
+GenAI Assistant,Prompt injection and adversarial misuse risk,Prompt injection controls require continuous regression testing.,Dedicated injection cases included in harness.,2,3,4,medium,AI Governance,Maintain attack library and release gates.,24,medium
+All Systems,Governance and accountability risk,Evidence pack should be linked to accountable owners and MI.,Cross-system register generated.,2,3,3,medium,Board Risk,Add owner attestations and monitoring pack.,18,medium
