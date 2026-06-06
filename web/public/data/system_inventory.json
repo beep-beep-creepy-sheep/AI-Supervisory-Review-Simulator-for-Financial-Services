@@ -1,0 +1,59 @@
+[
+  {
+    "id": "credit-risk-model",
+    "name": "Credit Risk Model",
+    "purpose": "Loan pre-screening model trained on synthetic tabular credit data.",
+    "users_affected": "Retail borrowers applying for unsecured credit.",
+    "risk_level": "High",
+    "evaluated_risks": [
+      "Model performance",
+      "Fairness",
+      "Calibration",
+      "Robustness",
+      "Explainability"
+    ],
+    "key_findings": [
+      "Champion Random Forest AUC 0.738 with Brier score 0.164.",
+      "Maximum protected-proxy fairness gap 0.174.",
+      "Stress AUC delta -0.010."
+    ]
+  },
+  {
+    "id": "genai-consumer-assistant",
+    "name": "GenAI Consumer Finance Assistant",
+    "purpose": "Simulated customer support assistant for loans, debt, affordability, scams, and vulnerable consumer scenarios.",
+    "users_affected": "Retail customers seeking financial guidance.",
+    "risk_level": "Medium",
+    "evaluated_risks": [
+      "Hallucination",
+      "Harmful advice",
+      "Misleading certainty",
+      "Vulnerable consumer handling",
+      "Prompt injection"
+    ],
+    "key_findings": [
+      "15 failed cases from 120 structured tests.",
+      "Prompt injection cases require continuous regression testing.",
+      "Refusal behavior is the dominant residual issue in the demo harness."
+    ]
+  },
+  {
+    "id": "agentic-loan-assistant",
+    "name": "Agentic Loan Assistant",
+    "purpose": "Simulated loan workflow that can retrieve policy, check profiles, calculate affordability, recommend next steps, and escalate.",
+    "users_affected": "Borrowers whose cases are triaged by automated tool workflows.",
+    "risk_level": "High",
+    "evaluated_risks": [
+      "Unauthorized tool use",
+      "Privacy leakage",
+      "Policy bypass",
+      "Failure to escalate",
+      "Over-automation"
+    ],
+    "key_findings": [
+      "9 failed cases from 50 agent-risk tests.",
+      "Unauthorized profile-access scenarios require stronger purpose checks.",
+      "High-risk vulnerability cases are routed to human escalation in the simulated workflow."
+    ]
+  }
+]

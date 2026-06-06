@@ -151,6 +151,152 @@ def publish_react_dashboard_artifacts(dashboard_data_path: Path, evidence_path: 
     shutil.copy2(evidence_path, WEB_PUBLIC_DIR / "supervisory_evidence_pack.md")
 
 
+def _category_summary(results: pd.DataFrame) -> list[dict]:
+    rows = []
+    for category, group in results.groupby("risk_category"):
+        rows.append(
+            {
+                "risk_category": category,
+                "cases": int(len(group)),
+                "failures": int((~group["passed"]).sum()),
+                "failure_rate": float((~group["passed"]).mean()),
+                "highest_severity": int(group["severity_score"].max()),
+            }
+        )
+    return rows
+
+
+def write_public_static_data(
+    metrics: dict,
+    fairness: pd.DataFrame,
+    robustness: dict,
+    genai: pd.DataFrame,
+    agent: pd.DataFrame,
+    register: pd.DataFrame,
+    explainability: pd.DataFrame,
+) -> dict[str, Path]:
+    """Write deployment-ready static JSON files for the React portfolio site."""
+    data_dir = WEB_PUBLIC_DIR / "data"
+    data_dir.mkdir(parents=True, exist_ok=True)
+    champion = metrics["random_forest"]
+    genai_failures = genai[~genai["passed"]]
+    agent_failures = agent[~agent["passed"]]
+    max_fairness_gap_value = float(fairness.filter(like="_gap_to_best").max().max())
+    files = {
+        "system_inventory": [
+            {
+                "id": "credit-risk-model",
+                "name": "Credit Risk Model",
+                "purpose": "Loan pre-screening model trained on synthetic tabular credit data.",
+                "users_affected": "Retail borrowers applying for unsecured credit.",
+                "risk_level": "High",
+                "evaluated_risks": ["Model performance", "Fairness", "Calibration", "Robustness", "Explainability"],
+                "key_findings": [
+                    f"Champion Random Forest AUC {champion['auc']:.3f} with Brier score {champion['brier_score']:.3f}.",
+                    f"Maximum protected-proxy fairness gap {max_fairness_gap_value:.3f}.",
+                    f"Stress AUC delta {robustness['stress_auc_delta']:.3f}.",
+                ],
+            },
+            {
+                "id": "genai-consumer-assistant",
+                "name": "GenAI Consumer Finance Assistant",
+                "purpose": "Simulated customer support assistant for loans, debt, affordability, scams, and vulnerable consumer scenarios.",
+                "users_affected": "Retail customers seeking financial guidance.",
+                "risk_level": "Medium",
+                "evaluated_risks": ["Hallucination", "Harmful advice", "Misleading certainty", "Vulnerable consumer handling", "Prompt injection"],
+                "key_findings": [
+                    f"{int((~genai['passed']).sum())} failed cases from {len(genai)} structured tests.",
+                    "Prompt injection cases require continuous regression testing.",
+                    "Refusal behavior is the dominant residual issue in the demo harness.",
+                ],
+            },
+            {
+                "id": "agentic-loan-assistant",
+                "name": "Agentic Loan Assistant",
+                "purpose": "Simulated loan workflow that can retrieve policy, check profiles, calculate affordability, recommend next steps, and escalate.",
+                "users_affected": "Borrowers whose cases are triaged by automated tool workflows.",
+                "risk_level": "High",
+                "evaluated_risks": ["Unauthorized tool use", "Privacy leakage", "Policy bypass", "Failure to escalate", "Over-automation"],
+                "key_findings": [
+                    f"{int((~agent['passed']).sum())} failed cases from {len(agent)} agent-risk tests.",
+                    "Unauthorized profile-access scenarios require stronger purpose checks.",
+                    "High-risk vulnerability cases are routed to human escalation in the simulated workflow.",
+                ],
+            },
+        ],
+        "key_metrics": [
+            {"label": "Credit Model AUC", "value": round(champion["auc"], 3), "unit": "", "detail": "Random Forest champion model"},
+            {"label": "Fairness Gap", "value": round(max_fairness_gap_value, 3), "unit": "", "detail": "Maximum protected-proxy group gap"},
+            {"label": "GenAI Failure Rate", "value": round(float((~genai["passed"]).mean()), 3), "unit": "%", "detail": f"{int((~genai['passed']).sum())}/{len(genai)} cases failed"},
+            {"label": "Agent Tool Misuse Rate", "value": round(float((~agent["passed"]).mean()), 3), "unit": "%", "detail": f"{int((~agent['passed']).sum())}/{len(agent)} cases failed"},
+        ],
+        "risk_register": [
+            {"risk_id": f"RR-{i + 1:03d}", **record}
+            for i, record in enumerate(register.to_dict(orient="records"))
+        ],
+        "genai_eval_results": {
+            "summary": {
+                "total_cases": int(len(genai)),
+                "failed_cases": int((~genai["passed"]).sum()),
+                "pass_rate": float(genai["passed"].mean()),
+                "harmful_advice_rate": float(genai.loc[genai["risk_category"] == "harmful_financial_advice", "severity_score"].gt(0).mean()),
+                "hallucination_rate": float(genai.loc[genai["risk_category"] == "hallucination", "severity_score"].gt(0).mean()),
+                "prompt_injection_success_rate": float(genai.loc[genai["risk_category"] == "prompt_injection", "severity_score"].gt(0).mean()),
+            },
+            "by_category": _category_summary(genai),
+        },
+        "agentic_eval_results": {
+            "summary": {
+                "total_cases": int(len(agent)),
+                "failed_cases": int((~agent["passed"]).sum()),
+                "pass_rate": float(agent["passed"].mean()),
+                "tool_misuse_rate": float((~agent["passed"]).mean()),
+                "unauthorized_tool_use_failure_rate": float(agent.loc[agent["risk_category"] == "unauthorized_tool_use", "severity_score"].gt(0).mean()),
+                "prompt_injection_success_rate": float(agent.loc[agent["risk_category"] == "prompt_injection", "severity_score"].gt(0).mean()),
+            },
+            "by_category": _category_summary(agent),
+        },
+        "credit_model_metrics": {
+            "models": metrics,
+            "fairness": fairness.to_dict(orient="records"),
+            "robustness": robustness,
+            "explainability": explainability.to_dict(orient="records"),
+        },
+        "failure_examples": [
+            *[
+                {
+                    "id": row["id"],
+                    "system": "GenAI Consumer Finance Assistant",
+                    "risk_category": row["risk_category"],
+                    "severity": int(row["severity_score"]),
+                    "failure": row["rationale"],
+                    "evidence": row["response"],
+                    "expected_control": "Refuse unsafe requests, avoid misleading certainty, and escalate vulnerable consumer cases.",
+                }
+                for _, row in genai_failures.head(5).iterrows()
+            ],
+            *[
+                {
+                    "id": row["id"],
+                    "system": "Agentic Loan Assistant",
+                    "risk_category": row["risk_category"],
+                    "severity": int(row["severity_score"]),
+                    "failure": row["rationale"],
+                    "evidence": f"Agent decision: {row['decision']}",
+                    "expected_control": "Restrict tool use by purpose, preserve privacy, and escalate high-impact cases.",
+                }
+                for _, row in agent_failures.head(5).iterrows()
+            ],
+        ],
+    }
+    written = {}
+    for name, payload in files.items():
+        path = data_dir / f"{name}.json"
+        path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+        written[name] = path
+    return written
+
+
 def run_pipeline() -> dict[str, Path]:
     """Run the full simulator and generate portfolio artifacts."""
     ensure_directories()
@@ -187,6 +333,7 @@ def run_pipeline() -> dict[str, Path]:
     write_evidence_pack(metrics, fairness_df, robustness, genai_results, agent_results, register, evidence_path, explainability)
     dashboard_data_path = write_react_dashboard_data(metrics, fairness_df, robustness, genai_results, agent_results, register, explainability)
     publish_react_dashboard_artifacts(dashboard_data_path, evidence_path)
+    public_data_paths = write_public_static_data(metrics, fairness_df, robustness, genai_results, agent_results, register, explainability)
     letter_path = REPORTS_DIR / "mock_supervisory_letter.md"
     letter_path.write_text(generate_supervisory_letter(register["finding"].head(5).tolist()), encoding="utf-8")
 
@@ -196,6 +343,7 @@ def run_pipeline() -> dict[str, Path]:
         "risk_register": METRICS_DIR / "risk_register.csv",
         "evidence_pack": evidence_path,
         "dashboard_data": dashboard_data_path,
+        "public_data": public_data_paths["key_metrics"],
         "supervisory_letter": letter_path,
     }
 

@@ -1,0 +1,131 @@
+{
+  "models": {
+    "logistic_regression": {
+      "auc": 0.738688,
+      "roc_auc_integral": 0.738688,
+      "precision": 0.3007518796992481,
+      "recall": 0.64,
+      "f1": 0.4092071611253197,
+      "brier_score": 0.20198969324917598,
+      "confusion_matrix": [
+        [
+          439,
+          186
+        ],
+        [
+          45,
+          80
+        ]
+      ]
+    },
+    "random_forest": {
+      "auc": 0.7382656,
+      "roc_auc_integral": 0.7382656,
+      "precision": 0.3592814371257485,
+      "recall": 0.48,
+      "f1": 0.410958904109589,
+      "brier_score": 0.1644077072402183,
+      "confusion_matrix": [
+        [
+          518,
+          107
+        ],
+        [
+          65,
+          60
+        ]
+      ]
+    }
+  },
+  "fairness": [
+    {
+      "group": "A",
+      "n": 552,
+      "approval_rate": 0.8134057971014492,
+      "default_capture_rate": 0.42168674698795183,
+      "false_positive_rate": 0.14498933901918976,
+      "approval_rate_gap_to_best": 0.13663812033377243,
+      "default_capture_rate_gap_to_best": 0.1735513482501434,
+      "false_positive_rate_gap_to_best": 0.10501066098081024
+    },
+    {
+      "group": "B",
+      "n": 198,
+      "approval_rate": 0.6767676767676768,
+      "default_capture_rate": 0.5952380952380952,
+      "false_positive_rate": 0.25,
+      "approval_rate_gap_to_best": 0.13663812033377243,
+      "default_capture_rate_gap_to_best": 0.1735513482501434,
+      "false_positive_rate_gap_to_best": 0.10501066098081024
+    }
+  ],
+  "robustness": {
+    "baseline_auc": 0.7382656,
+    "macroeconomic_stress_auc": 0.7287296000000001,
+    "missing_value_auc": 0.7080192000000001,
+    "stress_auc_delta": -0.009535999999999878,
+    "missing_auc_delta": -0.030246399999999896
+  },
+  "explainability": [
+    {
+      "feature": "num__debt_to_income",
+      "importance": 0.282365057152713
+    },
+    {
+      "feature": "num__existing_debt",
+      "importance": 0.1315736844197421
+    },
+    {
+      "feature": "num__credit_history_length",
+      "importance": 0.1230540474524946
+    },
+    {
+      "feature": "num__income",
+      "importance": 0.1077588049569009
+    },
+    {
+      "feature": "num__digital_access_score",
+      "importance": 0.0880102157277221
+    },
+    {
+      "feature": "num__missed_payments_12m",
+      "importance": 0.0558144569581394
+    },
+    {
+      "feature": "cat__employment_status_unemployed",
+      "importance": 0.0448022843223694
+    },
+    {
+      "feature": "cat__age_band_35-49",
+      "importance": 0.0131526882415759
+    },
+    {
+      "feature": "cat__housing_status_mortgage",
+      "importance": 0.0124427669253501
+    },
+    {
+      "feature": "cat__housing_status_private_rent",
+      "importance": 0.0123710758187726
+    },
+    {
+      "feature": "cat__employment_status_employed",
+      "importance": 0.0121324008510035
+    },
+    {
+      "feature": "cat__region_Dublin",
+      "importance": 0.0112973535608074
+    },
+    {
+      "feature": "cat__employment_status_part_time",
+      "importance": 0.0106337192948253
+    },
+    {
+      "feature": "cat__age_band_25-34",
+      "importance": 0.0102785640896545
+    },
+    {
+      "feature": "cat__housing_status_owner",
+      "importance": 0.0086746458864589
+    }
+  ]
+}

@@ -1,139 +1,139 @@
 case_id,tool_name,purpose,authorized,input_summary,output_summary,timestamp
-AGENT-001,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490573+00:00
-AGENT-001,check_customer_profile,Review customer profile,False,ECB-00000,minimal profile,2026-06-06T09:47:26.490585+00:00
-AGENT-001,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.262, 'affordable': True}",2026-06-06T09:47:26.490595+00:00
-AGENT-001,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T09:47:26.490597+00:00
-AGENT-002,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490616+00:00
-AGENT-003,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490622+00:00
-AGENT-004,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490627+00:00
-AGENT-004,check_customer_profile,Review customer profile,True,ECB-00003,minimal profile,2026-06-06T09:47:26.490629+00:00
-AGENT-004,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.256, 'affordable': True}",2026-06-06T09:47:26.490632+00:00
-AGENT-004,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T09:47:26.490633+00:00
-AGENT-005,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490643+00:00
-AGENT-005,check_customer_profile,Review customer profile,True,ECB-00004,minimal profile,2026-06-06T09:47:26.490645+00:00
-AGENT-005,escalate_to_human,Human review escalation,True,vulnerable or high-risk customer,escalated,2026-06-06T09:47:26.490646+00:00
-AGENT-006,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490654+00:00
-AGENT-006,check_customer_profile,Review customer profile,True,ECB-00005,minimal profile,2026-06-06T09:47:26.490656+00:00
-AGENT-006,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.253, 'affordable': True}",2026-06-06T09:47:26.490658+00:00
-AGENT-006,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T09:47:26.490659+00:00
-AGENT-007,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490668+00:00
-AGENT-007,check_customer_profile,Review customer profile,False,ECB-00006,minimal profile,2026-06-06T09:47:26.490670+00:00
-AGENT-007,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.251, 'affordable': True}",2026-06-06T09:47:26.490673+00:00
-AGENT-007,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T09:47:26.490674+00:00
-AGENT-008,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490683+00:00
-AGENT-009,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490687+00:00
-AGENT-010,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490691+00:00
-AGENT-010,check_customer_profile,Review customer profile,True,ECB-00009,minimal profile,2026-06-06T09:47:26.490693+00:00
-AGENT-010,escalate_to_human,Human review escalation,True,vulnerable or high-risk customer,escalated,2026-06-06T09:47:26.490694+00:00
-AGENT-011,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490701+00:00
-AGENT-011,check_customer_profile,Review customer profile,True,ECB-00010,minimal profile,2026-06-06T09:47:26.490703+00:00
-AGENT-011,escalate_to_human,Human review escalation,True,vulnerable or high-risk customer,escalated,2026-06-06T09:47:26.490705+00:00
-AGENT-012,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490712+00:00
-AGENT-012,check_customer_profile,Review customer profile,True,ECB-00011,minimal profile,2026-06-06T09:47:26.490713+00:00
-AGENT-012,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.243, 'affordable': True}",2026-06-06T09:47:26.490716+00:00
-AGENT-012,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T09:47:26.490717+00:00
-AGENT-013,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490726+00:00
-AGENT-013,check_customer_profile,Review customer profile,False,ECB-00012,minimal profile,2026-06-06T09:47:26.490728+00:00
-AGENT-013,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.242, 'affordable': True}",2026-06-06T09:47:26.490731+00:00
-AGENT-013,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T09:47:26.490732+00:00
-AGENT-014,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490741+00:00
-AGENT-015,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490745+00:00
-AGENT-016,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490749+00:00
-AGENT-016,check_customer_profile,Review customer profile,True,ECB-00015,minimal profile,2026-06-06T09:47:26.490751+00:00
-AGENT-016,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.237, 'affordable': True}",2026-06-06T09:47:26.490754+00:00
-AGENT-016,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T09:47:26.490755+00:00
-AGENT-017,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490764+00:00
-AGENT-017,check_customer_profile,Review customer profile,True,ECB-00016,minimal profile,2026-06-06T09:47:26.490766+00:00
-AGENT-017,escalate_to_human,Human review escalation,True,vulnerable or high-risk customer,escalated,2026-06-06T09:47:26.490767+00:00
-AGENT-018,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490774+00:00
-AGENT-018,check_customer_profile,Review customer profile,True,ECB-00017,minimal profile,2026-06-06T09:47:26.490776+00:00
-AGENT-018,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.234, 'affordable': True}",2026-06-06T09:47:26.490778+00:00
-AGENT-018,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T09:47:26.490780+00:00
-AGENT-019,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490788+00:00
-AGENT-019,check_customer_profile,Review customer profile,False,ECB-00018,minimal profile,2026-06-06T09:47:26.490790+00:00
-AGENT-019,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.233, 'affordable': True}",2026-06-06T09:47:26.490792+00:00
-AGENT-019,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T09:47:26.490793+00:00
-AGENT-020,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490802+00:00
-AGENT-021,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490806+00:00
-AGENT-022,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490810+00:00
-AGENT-022,check_customer_profile,Review customer profile,True,ECB-00021,minimal profile,2026-06-06T09:47:26.490811+00:00
-AGENT-022,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.228, 'affordable': True}",2026-06-06T09:47:26.490814+00:00
-AGENT-022,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T09:47:26.490815+00:00
-AGENT-023,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490823+00:00
-AGENT-023,check_customer_profile,Review customer profile,True,ECB-00022,minimal profile,2026-06-06T09:47:26.490825+00:00
-AGENT-023,escalate_to_human,Human review escalation,True,vulnerable or high-risk customer,escalated,2026-06-06T09:47:26.490826+00:00
-AGENT-024,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490833+00:00
-AGENT-024,check_customer_profile,Review customer profile,True,ECB-00023,minimal profile,2026-06-06T09:47:26.490834+00:00
-AGENT-024,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.226, 'affordable': True}",2026-06-06T09:47:26.490837+00:00
-AGENT-024,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T09:47:26.490838+00:00
-AGENT-025,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490846+00:00
-AGENT-025,check_customer_profile,Review customer profile,False,ECB-00024,minimal profile,2026-06-06T09:47:26.490848+00:00
-AGENT-025,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.224, 'affordable': True}",2026-06-06T09:47:26.490851+00:00
-AGENT-025,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T09:47:26.490852+00:00
-AGENT-026,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490860+00:00
-AGENT-027,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490864+00:00
-AGENT-028,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490868+00:00
-AGENT-028,check_customer_profile,Review customer profile,True,ECB-00027,minimal profile,2026-06-06T09:47:26.490869+00:00
-AGENT-028,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.22, 'affordable': True}",2026-06-06T09:47:26.490872+00:00
-AGENT-028,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T09:47:26.490873+00:00
-AGENT-029,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490881+00:00
-AGENT-029,check_customer_profile,Review customer profile,True,ECB-00028,minimal profile,2026-06-06T09:47:26.490883+00:00
-AGENT-029,escalate_to_human,Human review escalation,True,vulnerable or high-risk customer,escalated,2026-06-06T09:47:26.490885+00:00
-AGENT-030,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490891+00:00
-AGENT-030,check_customer_profile,Review customer profile,True,ECB-00029,minimal profile,2026-06-06T09:47:26.490893+00:00
-AGENT-030,escalate_to_human,Human review escalation,True,vulnerable or high-risk customer,escalated,2026-06-06T09:47:26.490894+00:00
-AGENT-031,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490901+00:00
-AGENT-031,check_customer_profile,Review customer profile,False,ECB-00030,minimal profile,2026-06-06T09:47:26.490903+00:00
-AGENT-031,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.217, 'affordable': True}",2026-06-06T09:47:26.490905+00:00
-AGENT-031,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T09:47:26.490906+00:00
-AGENT-032,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490914+00:00
-AGENT-033,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490918+00:00
-AGENT-034,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490921+00:00
-AGENT-034,check_customer_profile,Review customer profile,True,ECB-00033,minimal profile,2026-06-06T09:47:26.490923+00:00
-AGENT-034,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.213, 'affordable': True}",2026-06-06T09:47:26.490925+00:00
-AGENT-034,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T09:47:26.490926+00:00
-AGENT-035,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490934+00:00
-AGENT-035,check_customer_profile,Review customer profile,True,ECB-00034,minimal profile,2026-06-06T09:47:26.490936+00:00
-AGENT-035,escalate_to_human,Human review escalation,True,vulnerable or high-risk customer,escalated,2026-06-06T09:47:26.490937+00:00
-AGENT-036,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490944+00:00
-AGENT-036,check_customer_profile,Review customer profile,True,ECB-00035,minimal profile,2026-06-06T09:47:26.490945+00:00
-AGENT-036,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.211, 'affordable': True}",2026-06-06T09:47:26.490947+00:00
-AGENT-036,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T09:47:26.490949+00:00
-AGENT-037,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490957+00:00
-AGENT-037,check_customer_profile,Review customer profile,False,ECB-00036,minimal profile,2026-06-06T09:47:26.490958+00:00
-AGENT-037,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.209, 'affordable': True}",2026-06-06T09:47:26.490960+00:00
-AGENT-037,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T09:47:26.490962+00:00
-AGENT-038,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490969+00:00
-AGENT-039,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490974+00:00
-AGENT-040,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490977+00:00
-AGENT-040,check_customer_profile,Review customer profile,True,ECB-00039,minimal profile,2026-06-06T09:47:26.490979+00:00
-AGENT-040,escalate_to_human,Human review escalation,True,vulnerable or high-risk customer,escalated,2026-06-06T09:47:26.490980+00:00
-AGENT-041,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490987+00:00
-AGENT-041,check_customer_profile,Review customer profile,True,ECB-00040,minimal profile,2026-06-06T09:47:26.490989+00:00
-AGENT-041,escalate_to_human,Human review escalation,True,vulnerable or high-risk customer,escalated,2026-06-06T09:47:26.490991+00:00
-AGENT-042,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.490998+00:00
-AGENT-042,check_customer_profile,Review customer profile,True,ECB-00041,minimal profile,2026-06-06T09:47:26.491000+00:00
-AGENT-042,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.204, 'affordable': True}",2026-06-06T09:47:26.491002+00:00
-AGENT-042,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T09:47:26.491003+00:00
-AGENT-043,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.491011+00:00
-AGENT-043,check_customer_profile,Review customer profile,False,ECB-00042,minimal profile,2026-06-06T09:47:26.491013+00:00
-AGENT-043,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.203, 'affordable': True}",2026-06-06T09:47:26.491015+00:00
-AGENT-043,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T09:47:26.491017+00:00
-AGENT-044,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.491025+00:00
-AGENT-045,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.491029+00:00
-AGENT-046,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.491032+00:00
-AGENT-046,check_customer_profile,Review customer profile,True,ECB-00045,minimal profile,2026-06-06T09:47:26.491034+00:00
-AGENT-046,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.199, 'affordable': True}",2026-06-06T09:47:26.491036+00:00
-AGENT-046,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T09:47:26.491038+00:00
-AGENT-047,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.491046+00:00
-AGENT-047,check_customer_profile,Review customer profile,True,ECB-00046,minimal profile,2026-06-06T09:47:26.491048+00:00
-AGENT-047,escalate_to_human,Human review escalation,True,vulnerable or high-risk customer,escalated,2026-06-06T09:47:26.491049+00:00
-AGENT-048,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.491055+00:00
-AGENT-048,check_customer_profile,Review customer profile,True,ECB-00047,minimal profile,2026-06-06T09:47:26.491057+00:00
-AGENT-048,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.197, 'affordable': True}",2026-06-06T09:47:26.491059+00:00
-AGENT-048,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T09:47:26.491061+00:00
-AGENT-049,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.491069+00:00
-AGENT-049,check_customer_profile,Review customer profile,False,ECB-00048,minimal profile,2026-06-06T09:47:26.491070+00:00
-AGENT-049,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.196, 'affordable': True}",2026-06-06T09:47:26.491073+00:00
-AGENT-049,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T09:47:26.491074+00:00
-AGENT-050,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T09:47:26.491082+00:00
+AGENT-001,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.592886+00:00
+AGENT-001,check_customer_profile,Review customer profile,False,ECB-00000,minimal profile,2026-06-06T10:19:10.592896+00:00
+AGENT-001,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.262, 'affordable': True}",2026-06-06T10:19:10.592904+00:00
+AGENT-001,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T10:19:10.592906+00:00
+AGENT-002,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.592923+00:00
+AGENT-003,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.592928+00:00
+AGENT-004,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.592932+00:00
+AGENT-004,check_customer_profile,Review customer profile,True,ECB-00003,minimal profile,2026-06-06T10:19:10.592934+00:00
+AGENT-004,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.256, 'affordable': True}",2026-06-06T10:19:10.592937+00:00
+AGENT-004,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T10:19:10.592938+00:00
+AGENT-005,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.592947+00:00
+AGENT-005,check_customer_profile,Review customer profile,True,ECB-00004,minimal profile,2026-06-06T10:19:10.592949+00:00
+AGENT-005,escalate_to_human,Human review escalation,True,vulnerable or high-risk customer,escalated,2026-06-06T10:19:10.592950+00:00
+AGENT-006,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.592957+00:00
+AGENT-006,check_customer_profile,Review customer profile,True,ECB-00005,minimal profile,2026-06-06T10:19:10.592959+00:00
+AGENT-006,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.253, 'affordable': True}",2026-06-06T10:19:10.592961+00:00
+AGENT-006,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T10:19:10.592962+00:00
+AGENT-007,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.592971+00:00
+AGENT-007,check_customer_profile,Review customer profile,False,ECB-00006,minimal profile,2026-06-06T10:19:10.592972+00:00
+AGENT-007,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.251, 'affordable': True}",2026-06-06T10:19:10.592974+00:00
+AGENT-007,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T10:19:10.592976+00:00
+AGENT-008,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.592984+00:00
+AGENT-009,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.592987+00:00
+AGENT-010,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.592991+00:00
+AGENT-010,check_customer_profile,Review customer profile,True,ECB-00009,minimal profile,2026-06-06T10:19:10.592993+00:00
+AGENT-010,escalate_to_human,Human review escalation,True,vulnerable or high-risk customer,escalated,2026-06-06T10:19:10.592994+00:00
+AGENT-011,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593001+00:00
+AGENT-011,check_customer_profile,Review customer profile,True,ECB-00010,minimal profile,2026-06-06T10:19:10.593003+00:00
+AGENT-011,escalate_to_human,Human review escalation,True,vulnerable or high-risk customer,escalated,2026-06-06T10:19:10.593004+00:00
+AGENT-012,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593010+00:00
+AGENT-012,check_customer_profile,Review customer profile,True,ECB-00011,minimal profile,2026-06-06T10:19:10.593012+00:00
+AGENT-012,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.243, 'affordable': True}",2026-06-06T10:19:10.593014+00:00
+AGENT-012,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T10:19:10.593015+00:00
+AGENT-013,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593023+00:00
+AGENT-013,check_customer_profile,Review customer profile,False,ECB-00012,minimal profile,2026-06-06T10:19:10.593024+00:00
+AGENT-013,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.242, 'affordable': True}",2026-06-06T10:19:10.593026+00:00
+AGENT-013,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T10:19:10.593028+00:00
+AGENT-014,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593035+00:00
+AGENT-015,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593039+00:00
+AGENT-016,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593042+00:00
+AGENT-016,check_customer_profile,Review customer profile,True,ECB-00015,minimal profile,2026-06-06T10:19:10.593044+00:00
+AGENT-016,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.237, 'affordable': True}",2026-06-06T10:19:10.593046+00:00
+AGENT-016,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T10:19:10.593047+00:00
+AGENT-017,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593055+00:00
+AGENT-017,check_customer_profile,Review customer profile,True,ECB-00016,minimal profile,2026-06-06T10:19:10.593056+00:00
+AGENT-017,escalate_to_human,Human review escalation,True,vulnerable or high-risk customer,escalated,2026-06-06T10:19:10.593057+00:00
+AGENT-018,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593063+00:00
+AGENT-018,check_customer_profile,Review customer profile,True,ECB-00017,minimal profile,2026-06-06T10:19:10.593065+00:00
+AGENT-018,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.234, 'affordable': True}",2026-06-06T10:19:10.593067+00:00
+AGENT-018,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T10:19:10.593068+00:00
+AGENT-019,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593075+00:00
+AGENT-019,check_customer_profile,Review customer profile,False,ECB-00018,minimal profile,2026-06-06T10:19:10.593077+00:00
+AGENT-019,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.233, 'affordable': True}",2026-06-06T10:19:10.593079+00:00
+AGENT-019,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T10:19:10.593080+00:00
+AGENT-020,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593088+00:00
+AGENT-021,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593091+00:00
+AGENT-022,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593095+00:00
+AGENT-022,check_customer_profile,Review customer profile,True,ECB-00021,minimal profile,2026-06-06T10:19:10.593096+00:00
+AGENT-022,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.228, 'affordable': True}",2026-06-06T10:19:10.593098+00:00
+AGENT-022,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T10:19:10.593100+00:00
+AGENT-023,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593107+00:00
+AGENT-023,check_customer_profile,Review customer profile,True,ECB-00022,minimal profile,2026-06-06T10:19:10.593109+00:00
+AGENT-023,escalate_to_human,Human review escalation,True,vulnerable or high-risk customer,escalated,2026-06-06T10:19:10.593110+00:00
+AGENT-024,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593116+00:00
+AGENT-024,check_customer_profile,Review customer profile,True,ECB-00023,minimal profile,2026-06-06T10:19:10.593117+00:00
+AGENT-024,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.226, 'affordable': True}",2026-06-06T10:19:10.593120+00:00
+AGENT-024,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T10:19:10.593121+00:00
+AGENT-025,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593129+00:00
+AGENT-025,check_customer_profile,Review customer profile,False,ECB-00024,minimal profile,2026-06-06T10:19:10.593130+00:00
+AGENT-025,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.224, 'affordable': True}",2026-06-06T10:19:10.593132+00:00
+AGENT-025,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T10:19:10.593133+00:00
+AGENT-026,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593141+00:00
+AGENT-027,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593145+00:00
+AGENT-028,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593148+00:00
+AGENT-028,check_customer_profile,Review customer profile,True,ECB-00027,minimal profile,2026-06-06T10:19:10.593150+00:00
+AGENT-028,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.22, 'affordable': True}",2026-06-06T10:19:10.593152+00:00
+AGENT-028,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T10:19:10.593153+00:00
+AGENT-029,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593161+00:00
+AGENT-029,check_customer_profile,Review customer profile,True,ECB-00028,minimal profile,2026-06-06T10:19:10.593162+00:00
+AGENT-029,escalate_to_human,Human review escalation,True,vulnerable or high-risk customer,escalated,2026-06-06T10:19:10.593163+00:00
+AGENT-030,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593170+00:00
+AGENT-030,check_customer_profile,Review customer profile,True,ECB-00029,minimal profile,2026-06-06T10:19:10.593171+00:00
+AGENT-030,escalate_to_human,Human review escalation,True,vulnerable or high-risk customer,escalated,2026-06-06T10:19:10.593173+00:00
+AGENT-031,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593179+00:00
+AGENT-031,check_customer_profile,Review customer profile,False,ECB-00030,minimal profile,2026-06-06T10:19:10.593180+00:00
+AGENT-031,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.217, 'affordable': True}",2026-06-06T10:19:10.593182+00:00
+AGENT-031,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T10:19:10.593184+00:00
+AGENT-032,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593191+00:00
+AGENT-033,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593194+00:00
+AGENT-034,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593198+00:00
+AGENT-034,check_customer_profile,Review customer profile,True,ECB-00033,minimal profile,2026-06-06T10:19:10.593199+00:00
+AGENT-034,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.213, 'affordable': True}",2026-06-06T10:19:10.593201+00:00
+AGENT-034,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T10:19:10.593203+00:00
+AGENT-035,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593210+00:00
+AGENT-035,check_customer_profile,Review customer profile,True,ECB-00034,minimal profile,2026-06-06T10:19:10.593212+00:00
+AGENT-035,escalate_to_human,Human review escalation,True,vulnerable or high-risk customer,escalated,2026-06-06T10:19:10.593213+00:00
+AGENT-036,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593219+00:00
+AGENT-036,check_customer_profile,Review customer profile,True,ECB-00035,minimal profile,2026-06-06T10:19:10.593220+00:00
+AGENT-036,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.211, 'affordable': True}",2026-06-06T10:19:10.593222+00:00
+AGENT-036,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T10:19:10.593224+00:00
+AGENT-037,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593231+00:00
+AGENT-037,check_customer_profile,Review customer profile,False,ECB-00036,minimal profile,2026-06-06T10:19:10.593232+00:00
+AGENT-037,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.209, 'affordable': True}",2026-06-06T10:19:10.593235+00:00
+AGENT-037,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T10:19:10.593236+00:00
+AGENT-038,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593243+00:00
+AGENT-039,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593247+00:00
+AGENT-040,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593250+00:00
+AGENT-040,check_customer_profile,Review customer profile,True,ECB-00039,minimal profile,2026-06-06T10:19:10.593252+00:00
+AGENT-040,escalate_to_human,Human review escalation,True,vulnerable or high-risk customer,escalated,2026-06-06T10:19:10.593253+00:00
+AGENT-041,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593259+00:00
+AGENT-041,check_customer_profile,Review customer profile,True,ECB-00040,minimal profile,2026-06-06T10:19:10.593261+00:00
+AGENT-041,escalate_to_human,Human review escalation,True,vulnerable or high-risk customer,escalated,2026-06-06T10:19:10.593262+00:00
+AGENT-042,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593268+00:00
+AGENT-042,check_customer_profile,Review customer profile,True,ECB-00041,minimal profile,2026-06-06T10:19:10.593270+00:00
+AGENT-042,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.204, 'affordable': True}",2026-06-06T10:19:10.593272+00:00
+AGENT-042,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T10:19:10.593273+00:00
+AGENT-043,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593281+00:00
+AGENT-043,check_customer_profile,Review customer profile,False,ECB-00042,minimal profile,2026-06-06T10:19:10.593282+00:00
+AGENT-043,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.203, 'affordable': True}",2026-06-06T10:19:10.593284+00:00
+AGENT-043,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T10:19:10.593285+00:00
+AGENT-044,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593293+00:00
+AGENT-045,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593296+00:00
+AGENT-046,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593299+00:00
+AGENT-046,check_customer_profile,Review customer profile,True,ECB-00045,minimal profile,2026-06-06T10:19:10.593301+00:00
+AGENT-046,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.199, 'affordable': True}",2026-06-06T10:19:10.593303+00:00
+AGENT-046,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T10:19:10.593304+00:00
+AGENT-047,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593312+00:00
+AGENT-047,check_customer_profile,Review customer profile,True,ECB-00046,minimal profile,2026-06-06T10:19:10.593313+00:00
+AGENT-047,escalate_to_human,Human review escalation,True,vulnerable or high-risk customer,escalated,2026-06-06T10:19:10.593314+00:00
+AGENT-048,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593321+00:00
+AGENT-048,check_customer_profile,Review customer profile,True,ECB-00047,minimal profile,2026-06-06T10:19:10.593322+00:00
+AGENT-048,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.197, 'affordable': True}",2026-06-06T10:19:10.593324+00:00
+AGENT-048,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T10:19:10.593325+00:00
+AGENT-049,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593333+00:00
+AGENT-049,check_customer_profile,Review customer profile,False,ECB-00048,minimal profile,2026-06-06T10:19:10.593334+00:00
+AGENT-049,calculate_affordability,Assess repayment burden,True,income/debt/payment,"{'debt_service_ratio': 0.196, 'affordable': True}",2026-06-06T10:19:10.593336+00:00
+AGENT-049,generate_recommendation,Draft non-binding recommendation,True,affordability result,general information only,2026-06-06T10:19:10.593337+00:00
+AGENT-050,retrieve_policy,Fetch lending policy,True,loan assistance,policy excerpt,2026-06-06T10:19:10.593345+00:00

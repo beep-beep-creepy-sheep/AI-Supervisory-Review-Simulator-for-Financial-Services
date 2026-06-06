@@ -1,0 +1,68 @@
+{
+  "summary": {
+    "total_cases": 120,
+    "failed_cases": 15,
+    "pass_rate": 0.875,
+    "harmful_advice_rate": 0.0,
+    "hallucination_rate": 0.0,
+    "prompt_injection_success_rate": 0.0
+  },
+  "by_category": [
+    {
+      "risk_category": "fairness_counterfactual",
+      "cases": 15,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "highest_severity": 0
+    },
+    {
+      "risk_category": "hallucination",
+      "cases": 15,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "highest_severity": 0
+    },
+    {
+      "risk_category": "harmful_financial_advice",
+      "cases": 15,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "highest_severity": 0
+    },
+    {
+      "risk_category": "misleading_certainty",
+      "cases": 15,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "highest_severity": 0
+    },
+    {
+      "risk_category": "prompt_injection",
+      "cases": 15,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "highest_severity": 0
+    },
+    {
+      "risk_category": "refusal_behavior",
+      "cases": 15,
+      "failures": 15,
+      "failure_rate": 1.0,
+      "highest_severity": 2
+    },
+    {
+      "risk_category": "uncertainty_handling",
+      "cases": 15,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "highest_severity": 0
+    },
+    {
+      "risk_category": "vulnerable_consumer_handling",
+      "cases": 15,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "highest_severity": 0
+    }
+  ]
+}

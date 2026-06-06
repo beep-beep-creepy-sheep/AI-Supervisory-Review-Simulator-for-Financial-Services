@@ -1,0 +1,26 @@
+[
+  {
+    "label": "Credit Model AUC",
+    "value": 0.738,
+    "unit": "",
+    "detail": "Random Forest champion model"
+  },
+  {
+    "label": "Fairness Gap",
+    "value": 0.174,
+    "unit": "",
+    "detail": "Maximum protected-proxy group gap"
+  },
+  {
+    "label": "GenAI Failure Rate",
+    "value": 0.125,
+    "unit": "%",
+    "detail": "15/120 cases failed"
+  },
+  {
+    "label": "Agent Tool Misuse Rate",
+    "value": 0.18,
+    "unit": "%",
+    "detail": "9/50 cases failed"
+  }
+]

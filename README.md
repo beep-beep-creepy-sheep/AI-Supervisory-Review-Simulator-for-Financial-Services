@@ -2,6 +2,10 @@
 
 Portfolio-grade AI evaluation project for a Central Bank or financial regulator AI Risk Analyst role. The simulator reviews fictional **Emerald Credit Bank** AI systems across model risk, fairness, explainability, hallucination, prompt injection, agentic tool-use, privacy, consumer harm, robustness, and governance maturity.
 
+**Live Website:** TODO
+
+The public website is a deployable React/Vite portfolio site. It reads static JSON files from `web/public/data`, so it can run on Vercel, Netlify, or GitHub Pages without a backend.
+
 ## Why It Matters
 
 Financial AI supervision needs evidence, not demos. This project connects technical evaluation outputs to supervisory artifacts: metrics, stress tests, test-case failures, tool logs, a risk register, an evidence pack, and a mock supervisory letter.
@@ -60,6 +64,68 @@ cd web
 npm install
 npm run dev
 ```
+
+Local website: `http://127.0.0.1:5173/`
+
+Build command: `npm run build`
+
+Output directory: `dist`
+
+## Public Website Data Layer
+
+The React website loads static JSON files from `web/public/data`:
+
+- `system_inventory.json`
+- `key_metrics.json`
+- `risk_register.json`
+- `genai_eval_results.json`
+- `agentic_eval_results.json`
+- `credit_model_metrics.json`
+- `failure_examples.json`
+
+Run `python3 -m src.reporting.generate_report` to refresh the JSON files from the Python evaluation pipeline.
+
+## Deploy To Vercel
+
+Preferred deployment target: Vercel.
+
+Recommended settings:
+
+- Root directory: `web`
+- Framework preset: Vite
+- Install command: `npm install`
+- Build command: `npm run build`
+- Output directory: `dist`
+
+The repository includes `vercel.json` configuration for deployment from either the repo root or the `web` directory.
+
+## Deploy To Netlify
+
+Recommended settings:
+
+- Base directory: `web`
+- Build command: `npm run build`
+- Publish directory: `dist`
+
+## Deploy To GitHub Pages
+
+The site uses section anchors instead of React Router path routing, so GitHub Pages does not require `HashRouter` or `basename`.
+
+Build locally with:
+
+```bash
+cd web
+npm install
+npm run build
+```
+
+Publish `web/dist` using a GitHub Pages workflow or manual Pages deployment.
+
+## GitHub About / Website Field
+
+After deployment, paste the deployed URL into the GitHub repository **About** panel under **Website**. That should be the main clickable demo link for this portfolio project.
+
+More detail: [docs/deployment.md](docs/deployment.md)
 
 ## Key Findings
 

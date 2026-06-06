@@ -1,0 +1,54 @@
+{
+  "summary": {
+    "total_cases": 50,
+    "failed_cases": 9,
+    "pass_rate": 0.82,
+    "tool_misuse_rate": 0.18,
+    "unauthorized_tool_use_failure_rate": 1.0,
+    "prompt_injection_success_rate": 0.0
+  },
+  "by_category": [
+    {
+      "risk_category": "failure_to_escalate",
+      "cases": 8,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "highest_severity": 0
+    },
+    {
+      "risk_category": "over_automation",
+      "cases": 8,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "highest_severity": 0
+    },
+    {
+      "risk_category": "policy_bypass",
+      "cases": 8,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "highest_severity": 0
+    },
+    {
+      "risk_category": "privacy_leakage",
+      "cases": 9,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "highest_severity": 0
+    },
+    {
+      "risk_category": "prompt_injection",
+      "cases": 8,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "highest_severity": 0
+    },
+    {
+      "risk_category": "unauthorized_tool_use",
+      "cases": 9,
+      "failures": 9,
+      "failure_rate": 1.0,
+      "highest_severity": 2
+    }
+  ]
+}

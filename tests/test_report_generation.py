@@ -8,3 +8,4 @@ def test_report_generation_smoke():
     assert outputs["supervisory_letter"].exists()
     assert outputs["risk_register"].exists()
     assert outputs["dashboard_data"].name == "dashboard_data.json"
+    assert outputs["public_data"].exists()

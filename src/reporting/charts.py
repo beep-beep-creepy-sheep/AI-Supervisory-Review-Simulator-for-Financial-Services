@@ -1,7 +1,14 @@
 """Chart generation for supervisory evidence."""
 
 from pathlib import Path
+import os
 import pandas as pd
+
+_MPL_CACHE = Path(__file__).resolve().parents[2] / "outputs" / ".matplotlib"
+_MPL_CACHE.mkdir(parents=True, exist_ok=True)
+os.environ.setdefault("MPLCONFIGDIR", str(_MPL_CACHE))
+os.environ.setdefault("XDG_CACHE_HOME", str(_MPL_CACHE))
+
 import matplotlib.pyplot as plt
 
 
@@ -27,4 +34,3 @@ def save_risk_rating_chart(register: pd.DataFrame, path: Path) -> None:
     plt.tight_layout()
     plt.savefig(path)
     plt.close()
-
