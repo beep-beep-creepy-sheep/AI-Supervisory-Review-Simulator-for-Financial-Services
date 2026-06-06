@@ -2,7 +2,7 @@
 
 Portfolio-grade AI evaluation project for a Central Bank or financial regulator AI Risk Analyst role. The simulator reviews fictional **Emerald Credit Bank** AI systems across model risk, fairness, explainability, hallucination, prompt injection, agentic tool-use, privacy, consumer harm, robustness, and governance maturity.
 
-**Live Website:** TODO - paste the deployed Vercel / Netlify / GitHub Pages URL here.
+**Live Website:** [https://web-gray-five-96.vercel.app](https://web-gray-five-96.vercel.app)
 
 **Local Clickable Demo:** [http://127.0.0.1:5173/](http://127.0.0.1:5173/) after running `cd web && npm run dev`.
 
@@ -14,7 +14,7 @@ Use the React website as the main portfolio demo. It is designed so a hiring man
 
 Demo entry points:
 
-- **Public website:** TODO - replace with deployed URL after Vercel deployment.
+- **Public website:** [https://web-gray-five-96.vercel.app](https://web-gray-five-96.vercel.app)
 - **Local preview:** [http://127.0.0.1:5173/](http://127.0.0.1:5173/)
 - **Generated evidence pack:** [outputs/reports/supervisory_evidence_pack.md](outputs/reports/supervisory_evidence_pack.md)
 - **Mock supervisory letter:** [outputs/reports/mock_supervisory_letter.md](outputs/reports/mock_supervisory_letter.md)
