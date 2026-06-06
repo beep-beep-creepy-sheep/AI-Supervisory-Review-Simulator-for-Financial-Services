@@ -2,9 +2,43 @@
 
 Portfolio-grade AI evaluation project for a Central Bank or financial regulator AI Risk Analyst role. The simulator reviews fictional **Emerald Credit Bank** AI systems across model risk, fairness, explainability, hallucination, prompt injection, agentic tool-use, privacy, consumer harm, robustness, and governance maturity.
 
-**Live Website:** TODO
+**Live Website:** TODO - paste the deployed Vercel / Netlify / GitHub Pages URL here.
+
+**Local Clickable Demo:** [http://127.0.0.1:5173/](http://127.0.0.1:5173/) after running `cd web && npm run dev`.
 
 The public website is a deployable React/Vite portfolio site. It reads static JSON files from `web/public/data`, so it can run on Vercel, Netlify, or GitHub Pages without a backend.
+
+## Clickable Demo / Reviewer Guide
+
+Use the React website as the main portfolio demo. It is designed so a hiring manager or AI risk reviewer can understand the project in about three minutes.
+
+Demo entry points:
+
+- **Public website:** TODO - replace with deployed URL after Vercel deployment.
+- **Local preview:** [http://127.0.0.1:5173/](http://127.0.0.1:5173/)
+- **Generated evidence pack:** [outputs/reports/supervisory_evidence_pack.md](outputs/reports/supervisory_evidence_pack.md)
+- **Mock supervisory letter:** [outputs/reports/mock_supervisory_letter.md](outputs/reports/mock_supervisory_letter.md)
+- **Deployment guide:** [docs/deployment.md](docs/deployment.md)
+
+Key website sections:
+
+- `#home` - project summary and key risk metrics.
+- `#systems` - credit risk model, GenAI consumer assistant, and agentic loan assistant inventory.
+- `#methodology` - risk taxonomy, evaluation protocol, test design, and scoring rubric.
+- `#results` - model metrics, fairness gaps, robustness, GenAI and agentic risk rates, and failure examples.
+- `#risk-register` - supervisory risk register with owner, evidence, rating, and mitigation.
+- `#evidence-pack` - executive summary, material findings, remediation actions, and supervisory letter excerpt.
+- `#run-locally` - tech stack, repository structure, local run commands, and deployment summary.
+
+Static data powering the public demo:
+
+- [web/public/data/system_inventory.json](web/public/data/system_inventory.json)
+- [web/public/data/key_metrics.json](web/public/data/key_metrics.json)
+- [web/public/data/risk_register.json](web/public/data/risk_register.json)
+- [web/public/data/genai_eval_results.json](web/public/data/genai_eval_results.json)
+- [web/public/data/agentic_eval_results.json](web/public/data/agentic_eval_results.json)
+- [web/public/data/credit_model_metrics.json](web/public/data/credit_model_metrics.json)
+- [web/public/data/failure_examples.json](web/public/data/failure_examples.json)
 
 ## Why It Matters
 
