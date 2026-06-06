@@ -1,6 +1,6 @@
 # AI Supervisory Review Simulator for Financial Services
 
-Portfolio-grade AI evaluation project as a sample regulatory tool. The simulator reviews fictional **Emerald Credit Bank** AI systems across model risk, fairness, explainability, hallucination, prompt injection, agentic tool-use, privacy, consumer harm, robustness, and governance maturity.
+Regulator-style AI risk assessment simulator for financial services. The project reviews fictional Emerald Credit Bank AI systems across credit modelling, GenAI customer support, and agentic loan-assistant use cases, producing evidence on model risk, fairness, explainability, hallucination, prompt injection, privacy, consumer harm, robustness, tool-use controls, and governance maturity.
 
 **Live Website:** [https://web-gray-five-96.vercel.app](https://web-gray-five-96.vercel.app)
 
