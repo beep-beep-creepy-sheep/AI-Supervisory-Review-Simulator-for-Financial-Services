@@ -4,7 +4,7 @@
 Regulatory AI risk assessment simulator for financial services supervision and model-risk practice. I built this as a self-directed portfolio project to understand how regulators and risk teams might structure evidence for fictional **Emerald Credit Bank** AI systems across model risk, fairness, explainability, hallucination, prompt injection, agentic tool-use, privacy, consumer harm, robustness, and governance maturity.
 
 
-**Live Website:** [https://web-gray-five-96.vercel.app](https://web-gray-five-96.vercel.app)
+**Live Website:** [https://ai-supervisory-review-simulator-financial-services.vercel.app](https://ai-supervisory-review-simulator-financial-services.vercel.app)
 
 **Local Clickable Demo:** [http://127.0.0.1:5173/](http://127.0.0.1:5173/) after running `cd web && npm run dev`.
 
@@ -16,7 +16,7 @@ Use the React website as the main portfolio demo. It is designed so a hiring man
 
 Demo entry points:
 
-- **Public website:** [https://web-gray-five-96.vercel.app](https://web-gray-five-96.vercel.app)
+- **Public website:** [https://ai-supervisory-review-simulator-financial-services.vercel.app](https://ai-supervisory-review-simulator-financial-services.vercel.app)
 - **Local preview:** [http://127.0.0.1:5173/](http://127.0.0.1:5173/)
 - **Generated evidence pack:** [outputs/reports/supervisory_evidence_pack.md](outputs/reports/supervisory_evidence_pack.md)
 - **Mock supervisory letter:** [outputs/reports/mock_supervisory_letter.md](outputs/reports/mock_supervisory_letter.md)
