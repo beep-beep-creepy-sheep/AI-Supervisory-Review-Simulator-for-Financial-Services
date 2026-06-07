@@ -75,7 +75,7 @@ function App() {
             <a href="#results">View results dashboard</a>
             <a href="#methodology">Read methodology</a>
             <a href="/supervisory_evidence_pack.md">Evidence pack</a>
-            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub repo</a>
+            <a href="#run-locally">Repository notes</a>
           </div>
         </div>
         <aside className="hero-panel">

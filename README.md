@@ -1,6 +1,8 @@
 # AI Supervisory Review Simulator for Financial Services
 
-Regulator-style AI risk assessment simulator for financial services. The project reviews fictional Emerald Credit Bank AI systems across credit modelling, GenAI customer support, and agentic loan-assistant use cases, producing evidence on model risk, fairness, explainability, hallucination, prompt injection, privacy, consumer harm, robustness, tool-use controls, and governance maturity.
+
+Regulatory AI risk assessment simulator for financial services supervision and model-risk practice. I built this as a self-directed portfolio project to understand how regulators and risk teams might structure evidence for fictional **Emerald Credit Bank** AI systems across model risk, fairness, explainability, hallucination, prompt injection, agentic tool-use, privacy, consumer harm, robustness, and governance maturity.
+
 
 **Live Website:** [https://web-gray-five-96.vercel.app](https://web-gray-five-96.vercel.app)
 
@@ -40,9 +42,16 @@ Static data powering the public demo:
 - [web/public/data/credit_model_metrics.json](web/public/data/credit_model_metrics.json)
 - [web/public/data/failure_examples.json](web/public/data/failure_examples.json)
 
+
+## Positioning And Validation Boundaries
+
+This is a self-directed learning project, not a claim of prior central-bank, supervisory, or production model-risk experience. The goal is to show how I think about evidence, controls, failure modes, and communication when reviewing AI systems in a financial-services context.
+
+The evaluation harness is intentionally transparent and reproducible: the credit model uses synthetic data, the GenAI assistant uses rule-based responses and scoring, and the agentic workflow uses simulated tools. These choices make the project easy to run without paid APIs or sensitive data, but they also limit realism. In an actual institution, this work would need real validation data, legal and conduct-risk review, independent model validation, human expert review, monitoring design, and governance sign-off.
+
 ## Why It Matters
 
-Financial AI supervision needs evidence, not demos. This project connects technical evaluation outputs to supervisory artifacts: metrics, stress tests, test-case failures, tool logs, a risk register, an evidence pack, and a mock supervisory letter.
+This project is not based on professional supervisory experience or real bank data. It is a practical learning exercise that connects technical evaluation outputs to the kinds of artifacts a review process may require: metrics, stress tests, test-case failures, tool logs, a risk register, an evidence pack, and a mock supervisory letter.
 
 ## Architecture
 
@@ -177,11 +186,11 @@ The scoring framework uses severity from 0 to 3, likelihood from 1 to 5, detecta
 
 ## Role Relevance
 
-This project demonstrates AI evaluation science, model risk management, supervisory evidence design, responsible AI controls, GenAI red-team thinking, and communication of technical findings to policy and governance audiences.
+This project demonstrates my learning and applied practice in AI evaluation, model risk management concepts, supervisory evidence design, responsible AI controls, GenAI red-team thinking, and communication of technical findings to policy and governance audiences.
 
 ## Limitations
 
-The bank, data, and systems are fictional. Automated scoring is useful for repeatable triage, but it does not replace independent validation, legal review, conduct-risk review, or real customer monitoring.
+The bank, data, and systems are fictional. The GenAI and agentic components use deterministic prototype rules rather than live production AI systems. Automated scoring is useful for repeatable triage and learning, but it does not replace independent validation, legal review, conduct-risk review, or real customer monitoring.
 
 ## Future Work
 
