@@ -1,6 +1,8 @@
 # AI Supervisory Review Simulator for Financial Services
 
-Learning-oriented AI evaluation simulator for financial services supervision and model-risk practice. I built this as a self-directed portfolio project to understand how regulators and risk teams might structure evidence for fictional **Emerald Credit Bank** AI systems across model risk, fairness, explainability, hallucination, prompt injection, agentic tool-use, privacy, consumer harm, robustness, and governance maturity.
+
+Regulatory AI risk assessment simulator for financial services supervision and model-risk practice. I built this as a self-directed portfolio project to understand how regulators and risk teams might structure evidence for fictional **Emerald Credit Bank** AI systems across model risk, fairness, explainability, hallucination, prompt injection, agentic tool-use, privacy, consumer harm, robustness, and governance maturity.
+
 
 **Live Website:** [https://web-gray-five-96.vercel.app](https://web-gray-five-96.vercel.app)
 
