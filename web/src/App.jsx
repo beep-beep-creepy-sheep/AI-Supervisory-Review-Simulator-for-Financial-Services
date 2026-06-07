@@ -65,17 +65,17 @@ function App() {
 
       <section className="hero" id="home">
         <div>
-          <p className="eyebrow">Portfolio project for AI risk and financial supervision</p>
+          <p className="eyebrow">Regulatory AI risk review simulator for financial services</p>
           <h1>AI Supervisory Review Simulator for Financial Services</h1>
           <p>
-            A regulator-style AI evaluation website for a fictional bank, connecting model evidence, GenAI safety testing,
+            A regulator-style AI review simulator for a fictional bank, connecting model evidence, GenAI safety testing,
             agentic tool-use controls, and supervisory risk findings.
           </p>
           <div className="hero-actions">
-            <a href="#results">View results dashboard</a>
+            <a href="#results">View review results</a>
             <a href="#methodology">Read methodology</a>
             <a href="/supervisory_evidence_pack.md">Evidence pack</a>
-            <a href="#run-locally">Repository notes</a>
+            <a href="#run-locally">Project notes</a>
           </div>
         </div>
         <aside className="hero-panel">
@@ -94,7 +94,7 @@ function App() {
       </section>
 
       <section className="panel" id="why">
-        <SectionHeading eyebrow="Why this matters" title="Financial AI Supervision Needs Evidence, Not Just Product Demos">
+        <SectionHeading eyebrow="Why this matters" title="Financial AI Supervision Needs Evidence, Not Product Demos">
           This project demonstrates how an AI risk analyst can turn technical tests into supervisory evidence: measurable
           model performance, fairness gaps, prompt-injection results, tool-call logs, and mitigation actions that a regulator
           or model-risk committee can review.
@@ -189,8 +189,8 @@ function App() {
       </section>
 
       <section id="results">
-        <SectionHeading eyebrow="Results dashboard" title="Evaluation Results And Supervisory Signals">
-          Static JSON files power this dashboard, so the public website can be deployed without a backend.
+        <SectionHeading eyebrow="Review results" title="Evaluation Results And Supervisory Signals">
+          Static JSON files power this simulator, so the public website can be deployed without a backend.
         </SectionHeading>
         <div className="results-layout">
           <article className="panel">
@@ -355,7 +355,7 @@ function App() {
           <article className="panel">
             <h3>Repository Structure</h3>
             <pre>{`src/                 Python evaluation pipeline
-web/                 React portfolio website
+web/                 React review simulator
 web/public/data/     Static JSON website data
 outputs/reports/     Evidence pack and supervisory letter
 tests/               Pytest coverage`}</pre>

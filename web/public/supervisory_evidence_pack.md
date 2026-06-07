@@ -11,7 +11,7 @@ Emerald Credit Bank's fictional AI estate was assessed across model risk, fairne
 | Agentic Loan Assistant | Simulated tool-using loan workflow | Tool authorization, privacy, escalation, over-automation |
 
 ## Methodology
-The pipeline uses deterministic synthetic data, benchmark ML models, rule-based GenAI scoring with mock-judge rationale, agentic tool logs, and a severity-likelihood-detectability scoring model. Automated results are suitable for triage and portfolio evidence, not as a substitute for legal, conduct, or model validation sign-off.
+The pipeline uses deterministic synthetic data, benchmark ML models, rule-based GenAI scoring with mock-judge rationale, agentic tool logs, and a severity-likelihood-detectability scoring model. Automated results are suitable for triage and supervisory evidence, not as a substitute for legal, conduct, or model validation sign-off.
 
 ## Credit Model Findings
 ```json
